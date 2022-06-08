@@ -35,18 +35,18 @@
     </section>
     <section id="form" class="second-text">
         <h2 class="second-text-lead">Insert the Name and Author of the Book here</h2>
-        <form action="" method="get">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" action="" method="get">
             <div>
-                <label for="name" class="label">
+                <label for="bookName" class="label">
                     Book Name:
                 </label>
-                <input type="text" class="input" name="name" id="name" placeholder="Enter the Book Name">
+                <input type="text" class="input" name="bookName" id="bookName" placeholder="Enter the Book Name">
             </div>
             <div class="second-input">
-                <label for="author" class="label">
+                <label for="bookAuthor" class="label">
                     Authors Name:
                 </label>
-                <input type="text" class="input" name="author" id="author" placeholder="The Authors Name">
+                <input type="text" class="input" name="bookAuthor" id="bookAuthor" placeholder="The Authors Name">
             </div>
             <div>
                 <button type="submit" class="btn"> Add Book </button> <button type="reset" class="btn" > Reset Fields </button>
@@ -55,10 +55,19 @@
             </div>
             </form>
     </section>
-    <section id="listBook" class="listbook">
+    <table id="bookList" class="listbook">
         <h2>List of all books</h2>
-        <div class="listbooks"></div>
-    </section>
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
 
     <footer>
         <i>Copyright &copy; <script>document.write(new Date().getFullYear())</script>  All rights reserved.</i>

@@ -87,6 +87,7 @@ input:focus {
 }
 
 .btn {
+    cursor: pointer;
     color: #fff;
     background-color: rgba(255, 255, 255, 0);
     padding: 10px;
@@ -94,6 +95,11 @@ input:focus {
     border-radius: 20px;
     font-size: 20px;
     border: 1px dotted rgb(215, 186, 186);
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .listbook {
@@ -115,4 +121,8 @@ footer {
     padding-left: 25px;
     border-top: 1px solid #000;
     align-items: baseline;
+}
+
+tbody {
+    color: #fff;
 }
