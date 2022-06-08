@@ -1,5 +1,5 @@
 # A Books Catelogue
-> Users with the link can go and add, view and delete books details according to users browsers cookies. By adding the user name and Authors Name.
+> Users with the link can go and add, view and delete books details according to users browsers cookies. By adding the Book name and Author Name.
 
 ## Home Page
 ![screenshot](images/nwp.jpg)

@@ -8,8 +8,61 @@
     <link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 <body>
-    
+    <header>
+        <nav class="nav-bar"> 
+            <b class="logo">
+                Books Catelogue
+            </b>
+            <ul class="nav-bar-click" >
+                <li class="" id=""><a href=""> About Us </a></li>
+                <li class="" id=""><a href=""> Add Book </a></li>
+                <li class="" id=""><a href=""> View Book </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="first-text">
+        <h1 class=""> Welcome to the Books Catelogue</h1>
+        <i class="">All books matters</i>
+    </section>
 
+    <section class="first">
+        This Page is Designed by Olayinka And Shadrach
+        <ul>
+            <li > GitHub: <a href="https://github.com/yinktech">@YinkTech</a> - <a href="https://github.com/shadrxcc">@shadrxcc</a></li>
+            <li > Twitter:  <a href="https://twitter.com/yink_tech">@YinkTech</a> - <a href="https://twitter.com/shadrxcc">@shadrxcc</a></li>
+            <li > LinkedIn: <a href="https://www.linkedin.com/in/yinktech">@YinkTech</a> - <a href="https://www.linkedin.com/in/shadrach-akaade-24a375189">@shadrxcc</a></li>
+        </ul>
+    </section>
+    <section id="form" class="second-text">
+        <h2 class="second-text-lead">Insert the Name and Author of the Book here</h2>
+        <form action="" method="get">
+            <div>
+                <label for="name" class="label">
+                    Book Name:
+                </label>
+                <input type="text" class="input" name="name" id="name" placeholder="Enter the Book Name">
+            </div>
+            <div class="second-input">
+                <label for="author" class="label">
+                    Authors Name:
+                </label>
+                <input type="text" class="input" name="author" id="author" placeholder="The Authors Name">
+            </div>
+            <div>
+                <button type="submit" class="btn"> Add Book </button> <button type="reset" class="btn" > Reset Fields </button>
+        
+
+            </div>
+            </form>
+    </section>
+    <section id="listBook" class="listbook">
+        <h2>List of all books</h2>
+        <div class="listbooks"></div>
+    </section>
+
+    <footer>
+        <i>Copyright &copy; <script>document.write(new Date().getFullYear())</script>  All rights reserved.</i>
+    </footer>
 
     <script src="main.js"></script>
 </body>
