@@ -7,7 +7,7 @@ function onFormSubmit() {
         bookAuthor : document.getElementById('bookAuthor').value,
     };
    if (books.bookName == '') {
-       document.getElementById('msg').innerHTML='please fill the form';
+       document.getElementById('msg').innerHTML='Please fill the form';
    } else {
        if (id=='') {
            let arr = getCrudData();
@@ -21,7 +21,7 @@ function onFormSubmit() {
            
                 document.getElementById('bookName').value='';
                 document.getElementById('bookAuthor').value='';
-                document.getElementById('msg').innerHTML='Data added';
+                document.getElementById('msg').innerHTML='Book added';
        }else {
            
        }
@@ -34,12 +34,12 @@ function selectData() {
       if (arr != null) {
         let data = '';
         let sno = 1;
-       for (let k in arr) {
-             data = data +
-            `<div style='justify-content: space-evenly;'> <b>${sno}</b> <b>${arr[k]}</b> <span><a href="javasrcipt:void(0)" onClick="deleteData(${k})">Delete</a></span><div>`;
-           sno++
-         }
-         document.getElementById('root').innerHTML=data;
+            for (let k in arr) {
+                    data = data +
+                    `<div style='justify-content: space-evenly;'> <b>${sno}</b> <b>${arr['k.bookName']}</b> <span><a href="javasrcipt:void(0)" onClick="deleteData(${k})">Delete</a></span><div>`;
+                sno++
+                }
+                document.getElementById('root').innerHTML=data;
      }
 }
 
@@ -65,7 +65,6 @@ function firstSectionShow() {
     secondSec.style.display = 'none';
     form.style.display = 'none';
     books.style.display = 'none';
-
 }
 
 function secondSectionShow() {
@@ -73,7 +72,6 @@ function secondSectionShow() {
     secondSec.style.display = 'block';
     form.style.display = 'none';
     books.style.display = 'none';
-
 }
 
 function thirdSectionShow() {
@@ -81,7 +79,6 @@ function thirdSectionShow() {
     secondSec.style.display = 'none';
     form.style.display = 'block';
     books.style.display = 'none';
-
 }
 
 function forthSectionShow() {
@@ -89,7 +86,6 @@ function forthSectionShow() {
     secondSec.style.display = 'none';
     form.style.display = 'none';
     books.style.display = 'block';
-    
 }
 
 first.style.display = 'block';
