@@ -2,7 +2,7 @@
 > Users with the link can go and add, view and delete books details according to users browsers cookies. By adding the Book name and Author Name.
 
 ## Home Page
-![screenshot](images/nwp.jpg)
+![screenshot](img/home.png)
 
 ## Built With 
 HTML <br> CSS <br> JavaScript
