@@ -6,10 +6,11 @@ function onFormSubmit() {
         bookName : document.getElementById('bookName').value,
         bookAuthor : document.getElementById('bookAuthor').value,
     };
+
    if (books.bookName == '') {
        document.getElementById('msg').innerHTML='Please fill the form';
    } else {
-       if (id=='') {
+       if (id =='') {
            let arr = getCrudData();
            if (arr == null) {
                let data = [books];
@@ -31,16 +32,16 @@ function onFormSubmit() {
 
 function selectData() {
     let arr = getCrudData();
-      if (arr != null) {
-        let data = '';
+    if (arr != null) {
+        let data = "";
         let sno = 1;
-            for (let k in arr) {
-                    data = data +
-                    `<div style='justify-content: space-evenly;'> <b>${sno}</b> <b>${arr['k.bookName']}</b> <span><a href="javasrcipt:void(0)" onClick="deleteData(${k})">Delete</a></span><div>`;
-                sno++
-                }
-                document.getElementById('root').innerHTML=data;
-     }
+        for (let k in arr) {
+            data = data +
+            `<tr class="table-row"><td>${sno}</td><td>${arr[k].bookName}    <i style="margin-left:9px; font-size:15px;">by  ${arr[k].bookAuthor}</i> </td><td><a href="javascript:void(0)" onClick="deleteData(${k})">Delete</a></td></tr>`;
+            sno++;
+        }
+        document.getElementById('root').innerHTML=data;
+    }
 }
 
 function deleteData(rid) {
