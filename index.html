@@ -11,21 +11,21 @@
     <header>
         <nav class="nav-bar"> 
             <b class="logo">
-                Books Catelogue
+                <a href="#firstSec" onclick="firstSectionShow()">  Books Catelogue </a>
             </b>
             <ul class="nav-bar-click" >
-                <li class="" id=""><a href=""> About Us </a></li>
-                <li class="" id=""><a href=""> Add Book </a></li>
-                <li class="" id=""><a href=""> View Book </a></li>
+                <li class="" id=""><a href="#secondSec" onclick="secondSectionShow()"> About Us </a></li>
+                <li class="" id=""><a href="#load" onclick="thirdSectionShow()"> Add Book </a></li>
+                <li class="" id=""><a href="#bookList" onclick="forthSectionShow()" > View Book </a></li>
             </ul>
         </nav>
     </header>
-    <section class="first-text">
+    <section class="first-text" id="firstSec">
         <h1 class=""> Welcome to the Books Catelogue</h1>
         <i class="">All books matters</i>
     </section>
 
-    <section class="first">
+    <section class="first" id="secondSec">
         This Page is Designed by Olayinka And Shadrach
         <ul>
             <li > GitHub: <a href="https://github.com/yinktech">@YinkTech</a> - <a href="https://github.com/shadrxcc">@shadrxcc</a></li>
@@ -35,8 +35,10 @@
     </section>
     <section id="form" class="second-text">
         <h2 class="second-text-lead">Insert the Name and Author of the Book here</h2>
-        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" action="" method="get">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <h5 id="msg"></h5>
             <div>
+
                 <label for="bookName" class="label">
                     Book Name:
                 </label>
@@ -49,25 +51,16 @@
                 <input type="text" class="input" name="bookAuthor" id="bookAuthor" placeholder="The Authors Name">
             </div>
             <div>
-                <button type="submit" class="btn"> Add Book </button> <button type="reset" class="btn" > Reset Fields </button>
-        
-
+              <input type="submit" id="btn" value="Add Book" class="btn">  <button type="reset" class="btn" > Reset Fields </button>
             </div>
             </form>
     </section>
-    <table id="bookList" class="listbook">
-        <h2>List of all books</h2>
-        <thead>
-            <tr>
-                <th>Book Name</th>
-                <th>Author</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
+    <section id="bookList" class="listbook">
+        <caption class="tablecap">List of all books</caption>
+        <div id="root" class="listbooks">
+
+        </div>
+    </section>
 
     <footer>
         <i>Copyright &copy; <script>document.write(new Date().getFullYear())</script>  All rights reserved.</i>
