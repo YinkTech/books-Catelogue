@@ -37,7 +37,7 @@ function selectData() {
         let sno = 1;
         for (let k in arr) {
             data = data +
-            `<tr class="table-row"><td>${sno}</td><td>${arr[k].bookName}    <i style="margin-left:9px; font-size:15px;">by  ${arr[k].bookAuthor}</i> </td><td><a href="javascript:void(0)" onClick="deleteData(${k})">Delete</a></td></tr>`;
+            `<tr><td>${sno}</td><td>${arr[k].bookName}    <i style="margin-left:9px; font-size:15px;">by  ${arr[k].bookAuthor}</i> </td><td><a href="javascript:void(0)" onClick="deleteData(${k})">Delete</a></td></tr>`;
             sno++;
         }
         document.getElementById('root').innerHTML=data;
