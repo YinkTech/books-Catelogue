@@ -18,15 +18,14 @@ html, body {
 
 .logo {
     font-size: 30px;
-    flex: 2;
     text-align: center;
     }
 
 .nav-bar-click {
     display: flex;
     list-style: none;
-    flex: 1;
     font-size: 20px;
+    padding: 0px;
 }
 .nav-bar-click li {
     padding: 9px;
@@ -48,11 +47,14 @@ ul {
 
 ul li {
     padding: 5px;
+    text-align: center;
+    border-right : 2px solid #fff;
 }
 
 .first-text {
     text-align: center;
-    margin: 10px;
+    font-size: 20px;
+
 }
 
 .second-text {
@@ -132,7 +134,8 @@ footer {
     bottom: 0;
     text-align: center;
     padding: 5px;
-    padding-left: 25px;
+    width: 100%;
+    padding:10px;
     border-top: 1px solid #000;
     align-items: baseline;
 }
