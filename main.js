@@ -6,10 +6,11 @@ function onFormSubmit() {
         bookName : document.getElementById('bookName').value,
         bookAuthor : document.getElementById('bookAuthor').value,
     };
+
    if (books.bookName == '') {
        document.getElementById('msg').innerHTML='please fill the form';
    } else {
-       if (id=='') {
+       if (id =='') {
            let arr = getCrudData();
            if (arr == null) {
                let data = [books];
