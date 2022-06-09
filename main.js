@@ -30,19 +30,7 @@ function onFormSubmit() {
    }
 }
 
-function selectData() {
-    let arr = getCrudData();
-      if (arr != null) {
-        let data = '';
-        let sno = 1;
-       for (let k in arr) {
-             data = data +
-            `<div style='justify-content: space-evenly;'> <b>${sno}</b> <b>${arr[k]}</b> <span><a href="javasrcipt:void(0)" onClick="deleteData(${k})">Delete</a></span><div>`;
-           sno++
-         }
-         document.getElementById('root').innerHTML=data;
-     }
-}
+
 
 function deleteData(rid) {
     let arr = getCrudData();
