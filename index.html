@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Catalogue</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+<body>
+    <header>
+        <nav class="nav-bar"> 
+            <b class="logo">
+                <a href="#firstSec" onclick="firstSectionShow()">  Books Catalogue </a>
+            </b>
+            <ul class="nav-bar-click" >
+                <li class="" id=""><a href="#secondSec" onclick="secondSectionShow()"> About Us </a></li>
+                <li class="" id=""><a href="#load" onclick="thirdSectionShow()"> Add Book </a></li>
+                <li class="" id=""><a href="#bookList" onclick="forthSectionShow()" > View Books </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="first-text" id="firstSec">
+        <h1 class=""> Welcome to the Books Catelogue</h1>
+        <i class="">All books matters</i>
+        <i style="display:block;">Kindly use the navigations to surf around 😊. </i>
+    </section>
+
+    <section class="first" id="secondSec">
+        This Page is Designed by Olayinka And Shadrach
+        <ul>
+            <li > GitHub: <a href="https://github.com/yinktech">@YinkTech</a> - <a href="https://github.com/shadrxcc">@shadrxcc</a></li>
+            <li > Twitter:  <a href="https://twitter.com/yink_tech">@YinkTech</a> - <a href="https://twitter.com/shadrxcc">@shadrxcc</a></li>
+            <li > LinkedIn: <a href="https://www.linkedin.com/in/yinktech">@YinkTech</a> - <a href="https://www.linkedin.com/in/shadrach-akaade-24a375189">@shadrxcc</a></li>
+        </ul>
+    </section>
+    <section id="form" class="second-text">
+        <h2 class="second-text-lead">Insert the Name and Author of the Book here</h2>
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <h5 id="msg" style="color:#f9f; font-size:20px; "></h5>
+            <div>
+
+                <label for="bookName" class="label">
+                    Book Name:
+                </label>
+                <input type="text" class="input" name="bookName" id="bookName" placeholder="Enter the Book Name">
+            </div>
+            <div class="second-input">
+                <label for="bookAuthor" class="label">
+                    Authors Name:
+                </label>
+                <input type="text" class="input" name="bookAuthor" id="bookAuthor" placeholder="The Authors Name">
+            </div>
+            <div>
+              <input type="submit" id="btn" value="Add Book" class="btn">  <button type="reset" class="btn" > Reset Fields </button>
+            </div>
+            </form>
+    </section>
+    <section id="bookList" class="listbook">
+        <h4 class="tablecap">Catelogue of all books</h4>
+    <table class="listbooks">
+        <tbody id="root" >
+        </tbody>
+    </table>
+    </section>
+
+    <footer>
+        <i>Copyright &copy; <script>document.write(new Date().getFullYear())</script>  All rights reserved.</i>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
